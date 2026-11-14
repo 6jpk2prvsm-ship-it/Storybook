@@ -102,7 +102,7 @@ catalog.sort((a, b) => order(a.id) - order(b.id));
 const catalogJSON = JSON.stringify(catalog, null, 2) + '\n';
 const resources = ['index.html', 'reader.js', 'manifest.webmanifest', 'icons/apple-touch-icon.png',
   'icons/icon-192.png', 'icons/icon-512.png', ...storyFiles.map(name => 'stories/' + name)];
-const worker = await readFile(join(root, 'scripts/sw-template.js'), 'utf8');
+const worker = await readFile(join(root, 'Scripts/sw-template.js'), 'utf8');
 const hash = createHash('sha256').update(worker).update(catalogJSON);
 for (const path of resources) hash.update(path).update(await readFile(join(source, path)));
 const release = hash.digest('hex').slice(0, 16);
