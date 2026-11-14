@@ -118,10 +118,6 @@
                 "witness"
               ],
               "text": "“Our melon’s missing,” Pip said. “Someone saw a stripy green thing bouncing downhill. They saw you walk past just before.”"
-            },
-            {
-              "visited": [],
-              "text": "“Our melon’s missing,” Pip said. “Your footprints were beside the empty stand. Did you see what happened?”"
             }
           ]
         },
@@ -231,10 +227,6 @@
                 "hill"
               ],
               "text": "Pip pointed uphill. “From the top, I could see its path all the way from the stand.”"
-            },
-            {
-              "visited": [],
-              "text": "Pip looked back uphill. “It must have rolled all the way from the stand.”"
             }
           ]
         },
