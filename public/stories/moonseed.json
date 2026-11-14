@@ -1,0 +1,313 @@
+{
+  "id": "moonseed",
+  "title": "The Moonseed and the Sleeping Garden",
+  "age": "6–8",
+  "type": "Quest adventure",
+  "subtitle": "A seed full of moonlight. A magical garden. What will you help it become?",
+  "description": "Carry a glowing seed through a curious garden. Choose your path, meet its peculiar residents, and help some moonlight grow.",
+  "icon": "✧",
+  "button": "Read the quest →",
+  "saveKey": "where-pages-wander-moonseed-v1",
+  "nodes": {
+    "start": {
+      "title": "A seed full of moonlight",
+      "number": "Scene 1",
+      "progress": 8,
+      "text": [
+        "Rowan found the seed just as the first star appeared.",
+        "It lay beside a garden gate, glowing gently in a crack between two stones. It was no bigger than a pea, but inside it something silver curled and uncurled, like a very small cat turning over in its sleep.",
+        "“Ah,” said someone behind the gate. “There you are.”",
+        "An old gardener peered over the wood. A moth was asleep on the brim of her hat.",
+        "“Were you talking to me?” Rowan asked.",
+        "“Both of you, really.” The gardener smiled. “That’s a moonseed. I dropped it while I was filling the watering cans.”",
+        "She held out a little clay pot. Rowan scooped up the seed with a fallen leaf and settled it inside.",
+        "“Would you take it to the Moon Garden? I’ll bring the water. We can plant it together.”",
+        "“What will it grow into?”",
+        "“That depends where you plant it. Moonseeds like having a choice.”",
+        "The seed gave a tiny silver flicker.",
+        "Beyond the gate, one path disappeared between tall ferns. The other followed a shallow brook, where the evening light danced on the stones.",
+        "“Both paths reach the garden wall,” said the gardener. “I’ll meet you inside.”",
+        "Rowan held the pot with both hands. A seed full of moonlight. A garden waiting somewhere ahead. This was certainly better than an ordinary walk."
+      ],
+      "prompt": "Which path should Rowan take?",
+      "choices": [
+        [
+          "Follow the path through the whispering ferns.",
+          "ferns"
+        ],
+        [
+          "Walk beside the brook and its dancing lights.",
+          "brook"
+        ]
+      ]
+    },
+    "ferns": {
+      "title": "A hiccup in the leaves",
+      "number": "Scene 2",
+      "progress": 27,
+      "text": [
+        "The ferns leaned towards Rowan as the path grew narrow.",
+        "“Excuse me,” Rowan said.",
+        "“Excuse me,” whispered the nearest fern.",
+        "“Excuse me,” whispered the next. Then the next. The words travelled away through the leaves.",
+        "Rowan stopped. “Are you copying me?”",
+        "“Copying me? Copying me? Copying me?”",
+        "Under the soil came a gentle tapping, like fingers drumming on a table. One fern curled its tip towards another. Rowan realised they were passing the message along their roots.",
+        "“Could you tell me the way to the Moon Garden?”",
+        "The question rustled into the distance. For a moment the whole path went quiet.",
+        "Then the answer came back. “Left at the stump. Right at the mushroom. Mind the snail.”",
+        "Rowan went left, then right, then carefully stepped around a snail wearing a drop of dew on its shell.",
+        "“Thank you,” Rowan began, but a hiccup escaped instead.",
+        "“Hic,” said a fern.",
+        "“Hic! Hic! HIC!” said the others, all the way down the path.",
+        "Rowan laughed so hard that the seed wobbled in its pot. Ahead, beyond the last chuckling leaves, stood a wall covered in pale climbing roses."
+      ],
+      "prompt": "The ferns have shown the way.",
+      "choices": [
+        [
+          "Carry the moonseed to the garden wall.",
+          "gate"
+        ]
+      ]
+    },
+    "brook": {
+      "title": "The captain of a leaf",
+      "number": "Scene 2",
+      "progress": 27,
+      "text": [
+        "The brook made a soft, bubbly sound as Rowan followed it around a bend.",
+        "“Port!” squeaked a voice. “No, starboard! Oh, honestly.”",
+        "A beetle stood on a curled leaf caught against a stone. A petal flag fluttered above its head. The beetle pushed a twig against the streambed, but the leaf only spun in a small, stubborn circle.",
+        "“Are you stuck?” Rowan asked.",
+        "“I’m inspecting this stone from every possible angle,” said the beetle. “But yes.”",
+        "Rowan put the moonseed’s pot safely on the dry path. With a long fallen twig, Rowan gently nudged the leaf away from the stone.",
+        "The boat drifted free. Its captain waved all six legs, thought better of it, and grabbed the mast.",
+        "“Excellent seamanship!” the beetle called.",
+        "“Which way to the Moon Garden?” Rowan asked.",
+        "“Across the broad stones, then up past the roses. They’re dry on top. I checked.”",
+        "Rowan picked up the pot and crossed the shallow water carefully, one wide stone at a time. A tiny fish paused below, its shadow no bigger than a comma.",
+        "From the far bank, Rowan waved goodbye.",
+        "The beetle saluted with one leg. “If you see another stone, tell it I’m not stopping.”",
+        "Rowan climbed the path towards a wall covered in pale roses, keeping the little pot snug between both hands."
+      ],
+      "prompt": "The beetle has shown the crossing.",
+      "choices": [
+        [
+          "Carry the moonseed to the garden wall.",
+          "gate"
+        ]
+      ]
+    },
+    "gate": {
+      "title": "The gate that snored",
+      "number": "Scene 3",
+      "progress": 45,
+      "text": [
+        "A wooden gate stood in the garden wall. Thick branches curled across its latch.",
+        "Rowan knocked.",
+        "The gate snored.",
+        "Rowan knocked a little louder. A knot in the wood wrinkled like a nose.",
+        "“Five more springs,” the gate murmured.",
+        "From the other side came the gardener’s voice. “You found us! He’s fallen asleep again. His branches always curl up when he naps.”",
+        "“Can you open him?”",
+        "“The latch is on your side. But a song usually wakes him. He likes joining in.”",
+        "Something white bobbed beside Rowan’s shoe. A rabbit sat near a low opening in the wall, twitching its nose.",
+        "“Or there’s the root passage,” the gardener added. “It’s short, dry and roomy. I use it myself when he’s having a particularly good dream.”",
+        "Rowan crouched and looked. Soft lights glimmered inside. The rabbit hopped a little way in, then turned to wait.",
+        "Two ways into a magical garden. Rowan glanced from the sleepy gate to the glowing opening."
+      ],
+      "prompt": "How should Rowan get inside?",
+      "choices": [
+        [
+          "Sing a song to wake the gate.",
+          "song"
+        ],
+        [
+          "Follow the rabbit through the glowing root passage.",
+          "roots"
+        ]
+      ]
+    },
+    "song": {
+      "title": "A very peculiar duet",
+      "number": "Scene 4",
+      "progress": 65,
+      "text": [
+        "Rowan set the pot on a flat stone and thought of a song.",
+        "“Twinkle, twinkle, little star…”",
+        "One wooden eye opened.",
+        "“How I wonder where you… are?” the gate sang, in a voice like a wardrobe being moved.",
+        "“Nearly,” said Rowan.",
+        "“Up above the world so high, like a turnip in the sky!”",
+        "Rowan burst out laughing. The gate looked pleased.",
+        "“A diamond,” Rowan said. “It’s a diamond.”",
+        "“Is it? Much less useful in soup.”",
+        "They tried the verse again. This time the gate put a teapot in the sky. Then a very surprised badger.",
+        "By the final line, its branches were shaking with laughter. They uncurled from the latch and stretched towards the stars.",
+        "“Oh, that’s better,” the gate said. “I was dreaming I was a fence. Terribly dull. Nothing to open.”",
+        "Rowan picked up the moonseed, lifted the latch and stepped through.",
+        "Behind the wall, the garden shone with tiny pools of silver light. The gardener stood beside three empty planting places, holding a watering can.",
+        "“I heard the badger,” she said. “One of his better verses.”"
+      ],
+      "prompt": "The gate is open, and the garden is waiting.",
+      "choices": [
+        [
+          "Show the gardener the moonseed.",
+          "planting"
+        ]
+      ]
+    },
+    "roots": {
+      "title": "The garden underneath",
+      "number": "Scene 4",
+      "progress": 65,
+      "text": [
+        "Rowan crouched at the opening, holding the little pot carefully. The rabbit waited until Rowan was ready, then hopped ahead.",
+        "Inside, the passage was just tall enough to move along on hands and knees. Rowan slid the pot forward a little at a time, keeping it upright.",
+        "Thick roots curved along the walls. Small lights moved inside them, slowly, like stars floating through drinking straws.",
+        "Above Rowan’s head, a droplet trembled at the tip of a root. It glowed gold, then silver, then the soft green of a new leaf.",
+        "“So this is where the garden begins,” Rowan whispered.",
+        "The rabbit’s ears brushed a root. Somewhere overhead, a flower gave a tiny sneeze.",
+        "Rowan grinned.",
+        "Near the far end, the passage widened. A root had grown into the shape of a little shelf. Rowan rested the pot there for a moment and watched a silver light travel towards it.",
+        "The moonseed flickered in reply.",
+        "“Do you know each other?” Rowan asked.",
+        "The seed, being a seed, said nothing. But it seemed a little brighter.",
+        "A few careful shuffles later, Rowan emerged beside a patch of thyme. The gardener was waiting with a watering can.",
+        "“The secret way,” she said. “Most visitors only see the flowers. You’ve met the garden underneath.”"
+      ],
+      "prompt": "The rabbit has brought Rowan safely inside.",
+      "choices": [
+        [
+          "Show the gardener the moonseed.",
+          "planting"
+        ]
+      ]
+    },
+    "planting": {
+      "title": "Three places for moonlight",
+      "number": "Scene 5",
+      "progress": 82,
+      "text": [
+        "The gardener knelt beside Rowan and looked into the pot.",
+        "“Safe and sound. Thank you.”",
+        "The moonseed was glowing brightly now, as though it knew it had arrived.",
+        {
+          "variants": [
+            {
+              "visited": [
+                "ferns",
+                "song"
+              ],
+              "text": "“The ferns told me the way,” Rowan said. “Then they told everyone my hiccup.” The gardener laughed. “They do enjoy fresh news.” “And your gate put a badger in the sky.” “Ah,” said the gardener. “He’s learning a new verse.”"
+            },
+            {
+              "visited": [
+                "ferns",
+                "roots"
+              ],
+              "text": "“The ferns told me the way,” Rowan said. “Then they told everyone my hiccup.” The gardener laughed. “They do enjoy fresh news.” “I saw lights moving inside the roots, too.” “The garden sharing its water and magic,” the gardener said. “Now your seed can join in.”"
+            },
+            {
+              "visited": [
+                "brook",
+                "song"
+              ],
+              "text": "“I helped a beetle free his leaf-boat,” Rowan said. “He showed me where to cross.” The gardener smiled. “Captain Beetle. He’ll be telling that tale for weeks.” “And your gate put a badger in the sky.” “Ah,” said the gardener. “He’s learning a new verse.”"
+            },
+            {
+              "visited": [
+                "brook",
+                "roots"
+              ],
+              "text": "“I helped a beetle free his leaf-boat,” Rowan said. “He showed me where to cross.” The gardener smiled. “Captain Beetle. He’ll be telling that tale for weeks.” “I saw lights moving inside the roots, too.” “The garden sharing its water and magic,” the gardener said. “Now your seed can join in.”"
+            }
+          ]
+        },
+        "Rowan set the little pot between them.",
+        "Together they walked to three little signs, each standing beside an empty patch of earth.",
+        "The first showed a flower shaped like a bell.",
+        "“Plant it here, and moon-bellflowers will grow. When the breeze passes through them, they make music.”",
+        "The second showed a small tree hung with glowing leaves.",
+        "“Here, it becomes a lantern tree. A lovely place to sit when the evening gets dark.”",
+        "Beside the pond, the third sign showed broad leaves floating on the water.",
+        "“And here, it grows silver stepping leaves. Little garden creatures can rest on them above the water.”",
+        "“Which one does the garden need?” Rowan asked.",
+        "“There’s room for any of them,” said the gardener. “What would you like to add?”",
+        "Rowan looked at the seed. All that moonlight, curled up so small. Soon it would have somewhere to stretch."
+      ],
+      "prompt": "What should Rowan help the moonseed become?",
+      "choices": [
+        [
+          "Grow bellflowers that make gentle music.",
+          "bells"
+        ],
+        [
+          "Grow a lantern tree with softly glowing leaves.",
+          "tree"
+        ],
+        [
+          "Grow floating leaves for little creatures to rest on.",
+          "pond"
+        ]
+      ]
+    },
+    "bells": {
+      "title": "A song for the evening",
+      "number": "Your ending",
+      "progress": 100,
+      "text": [
+        "Rowan made a little hollow in the flower bed and tipped the moonseed gently into it. The gardener covered it with soft earth.",
+        "“One small drink,” she said, pouring from her can.",
+        "For a moment, nothing happened.",
+        "Then a silver shoot poked up. Two leaves unfolded. A row of pale flowers rose on bending stems, each one shaped like a tiny bell.",
+        "The breeze brushed past.",
+        "Ting. Ting-ting. Ting.",
+        "Across the garden, the wooden gate hummed along. This time, Rowan noticed, he almost got the tune right.",
+        "The gardener laid two cushions on the grass. Rowan settled beside her and listened to the music they had helped to grow.",
+        "“At first it fitted in a pot,” Rowan said.",
+        "“Some lovely things begin very small.”",
+        "Later, as they walked back along the gardener’s broad path, the bells rang softly behind them. Rowan’s hands were empty now, but the song came all the way home."
+      ],
+      "ending": true
+    },
+    "tree": {
+      "title": "A place beneath the stars",
+      "number": "Your ending",
+      "progress": 100,
+      "text": [
+        "Rowan planted the moonseed in the little grove. The gardener tucked the earth around it and gave it a gentle drink.",
+        "The soil trembled. A thin stem rose, thickening into a smooth little trunk. Branches stretched upwards, each carrying a tightly folded leaf.",
+        "One by one, the leaves opened.",
+        "Warm silver light spilled onto the grass. On every leaf, a tiny pattern shone: dots, curls, loops and star-shaped freckles.",
+        "A moth landed on a branch. It was the one from the gardener’s hat.",
+        "“Found yourself a better bedroom?” she asked it.",
+        "Rowan sat beneath the tree. Its light was just bright enough to see the flowers and just soft enough to see the stars beyond them.",
+        "“We could read a story here,” Rowan said.",
+        "“We certainly could.”",
+        "The gardener sat down beside Rowan and began one about a seed that had taken the long way home. Rowan helped with the interesting bits.",
+        "When it was time to leave, they followed the gardener’s broad path back. Behind them, the lantern tree kept a small, warm circle of light for whoever came next."
+      ],
+      "ending": true
+    },
+    "pond": {
+      "title": "The quiet little visitors",
+      "number": "Your ending",
+      "progress": 100,
+      "text": [
+        "At the pond’s edge, Rowan pressed the moonseed into a patch of damp earth. The gardener added a splash from her watering can.",
+        "A silver stem curled over the bank and touched the water.",
+        "One broad leaf opened. Then another. Then three more, each floating flat and still, like a little island with a moonlit rim.",
+        "Rowan and the gardener settled on a bench to watch.",
+        "First came a beetle. It tested a leaf with one foot, then climbed aboard and turned around twice before choosing a comfortable spot.",
+        "A frog arrived next. It landed with a soft plop and sat looking as though the leaf had been its idea all along.",
+        "Then a dragonfly rested on a curled stem. Its wings caught the light in tiny squares.",
+        "“They found it already,” Rowan whispered.",
+        "“Gardens have a way of passing news.”",
+        "Rowan thought of the journey and smiled. Somewhere in the soft evening, there was probably a very good story making its way from leaf to leaf.",
+        "When they left by the gardener’s broad path, the little visitors stayed behind, resting on the moonlight Rowan had brought."
+      ],
+      "ending": true
+    }
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "id": "letter",
+  "title": "The Letter That Disappeared",
+  "age": "9–11",
+  "type": "Mystery adventure",
+  "subtitle": "A locked case. A vanished message. Which evidence will you trust?",
+  "description": "A message vanishes inside a locked museum case. Follow the evidence, challenge your first theory, and choose how to prove the answer.",
+  "icon": "✉",
+  "button": "Investigate the letter →",
+  "saveKey": "where-pages-wander-letter-v1",
+  "nodes": {
+    "start": {
+      "title": "An empty page behind glass",
+      "number": "Investigation",
+      "progress": 8,
+      "text": [
+        "At five o’clock, the letter was there. At five past, it wasn’t.",
+        "The paper hadn’t moved. Neither had the two brass clips holding it inside the locked display case. Only the writing had disappeared.",
+        "Rowan leaned closer. A line of blue remained beneath the lower clip, thin as a thread.",
+        "“Please tell me this is part of tonight’s exhibition,” said Kit.",
+        "Across the museum hall, Mrs Bell was arranging chairs for the opening. The new exhibition celebrated Mara Vale, an inventor famous for making ordinary things behave in thoroughly inconvenient ways.",
+        "Her letter was supposed to reveal where she had hidden a final invention. Now it was blank.",
+        "Mrs Bell checked the lock. “I’ve had the only key since we closed the case. No one’s opened it.”",
+        "Beside the case stood a new spotlight. Blue marks smudged the glass. A volunteer named Ellis had been seen crouching there minutes earlier.",
+        "“I was fixing the label,” Ellis said quickly. “I didn’t touch the letter.”",
+        "Mrs Bell looked towards the doors. “Guests arrive at six. We can display a mystery, but I’d rather understand it first.”",
+        "Kit opened a notebook. “Where do we start?”"
+      ],
+      "prompt": "Which evidence should Rowan secure first?",
+      "choices": [
+        [
+          "Study the case and save the opening photograph.",
+          "photo"
+        ],
+        [
+          "Get separate accounts from Ellis and Mrs Bell.",
+          "witness"
+        ]
+      ]
+    },
+    "photo": {
+      "title": "The photograph that stayed",
+      "number": "Investigation",
+      "progress": 25,
+      "text": [
+        "Mrs Bell handed Rowan the museum’s tablet. Its opening photograph showed the letter before the spotlight had been fitted.",
+        "Rowan saved a copy. Most of the handwriting was readable, although a reflection hid the final line.",
+        "“Where daylight rests, my final…” Kit read. “Final what?”",
+        "“Keep the photograph,” Rowan said. “It proves there was writing. It might help us recover the message.”",
+        "The paper had a crescent-shaped tear in its upper corner. Rowan compared it with the sheet behind the glass. The tear, the crease and a brown spot near the edge all matched.",
+        "Then Rowan inspected the blue smudges outside the case. Each was a little rectangle, exactly the width of the label’s painted border. Ellis’s gloves were the same blue.",
+        "“Suspicious-looking,” Kit said.",
+        "“But perhaps the paint went from the label to the glove, then onto the glass.”",
+        "Rowan tilted the tablet. In the photograph, a brass clip covered part of a word. Now the only surviving blue line lay beneath that same clip.",
+        "Something had protected that tiny piece of writing. But from what?"
+      ],
+      "prompt": "Keep the photograph and compare the timing.",
+      "choices": [
+        [
+          "Lay out what changed in those five minutes.",
+          "compare"
+        ]
+      ]
+    },
+    "witness": {
+      "title": "Two versions of five minutes",
+      "number": "Investigation",
+      "progress": 25,
+      "text": [
+        "Rowan spoke to Ellis first, while Kit asked Mrs Bell to write down what she remembered. They compared the accounts afterwards.",
+        "Ellis had straightened the label at 5:02. Its painted border was still tacky. His glove left blue rectangles on the glass.",
+        "“I know how that looks,” he said. “But I couldn’t open the case even if I wanted to.”",
+        "At 5:03, Mrs Bell had switched on the new spotlight. She remembered reading the first sentence while checking its angle.",
+        "“At five past, I looked again. The words were gone.”",
+        "Rowan drew a line in the notebook: letter visible; label moved; lamp on; letter blank.",
+        "“Ellis finished before Mrs Bell saw the writing,” Kit said. “So his visit doesn’t explain it disappearing afterwards.”",
+        "“Unless something took time,” Rowan replied. “Let’s keep both possibilities open.”",
+        "Mrs Bell confirmed that the locked case had remained in her sight. The paper still had the same crescent-shaped tear in one corner.",
+        "Rowan inspected the surviving blue line beneath the lower brass clip. Whatever had happened, it had missed a tiny covered patch.",
+        "Kit underlined LAMP ON in the timeline. “That changed too.”"
+      ],
+      "prompt": "Keep the timeline and compare the possibilities.",
+      "choices": [
+        [
+          "Lay out what changed in those five minutes.",
+          "compare"
+        ]
+      ]
+    },
+    "compare": {
+      "title": "A theory needs a test",
+      "number": "Investigation",
+      "progress": 42,
+      "text": [
+        "They had two possible explanations.",
+        "Someone might have interfered with the letter. Or something about its surroundings had changed the writing.",
+        "The blue fingerprints fitted the first idea, but didn’t prove it. The new spotlight fitted the second, but lamps didn’t usually eat sentences.",
+        "Rowan pointed to the brass clip. “If somebody wiped the writing away, why leave ink exactly beneath this?”",
+        "“Because they couldn’t reach it?” Kit suggested.",
+        "“Maybe. Or because whatever removed the writing couldn’t reach it.”",
+        "Mrs Bell brought over Mara’s catalogue. A loose card stuck out from the section marked EXPERIMENTAL INKS.",
+        "“We also have the spare case in the workshop,” she said. “Ellis can show you exactly what he did. No need to open this one.”",
+        "Kit tapped the notebook. “Research the ink, or test whether anyone could have switched the page?”"
+      ],
+      "prompt": "What would give Rowan the most useful evidence next?",
+      "choices": [
+        [
+          "Read Mara’s ink notes and inspect the sample card.",
+          "archive"
+        ],
+        [
+          "Re-create Ellis’s actions using the spare display case.",
+          "handling"
+        ]
+      ]
+    },
+    "archive": {
+      "title": "The inventor’s warning",
+      "number": "Investigation",
+      "progress": 62,
+      "text": [
+        "The loose card carried a blue spiral. Half of it was tucked beneath a paper sleeve.",
+        "Mara’s note read: “Sun-ink, batch seven. The colour hides under bright light and returns in shade. Excellent for secret messages. Hopeless for shopping lists.”",
+        "Kit looked up. “She invented disappearing ink?”",
+        "“Light-changing ink,” Rowan said. “Let’s see whether the sample actually behaves that way.”",
+        "With Mrs Bell watching, they placed the card beneath a reading lamp. The uncovered half of the spiral faded. The half under the sleeve stayed blue.",
+        "They slipped the whole card into its sleeve. A little later, the spiral was complete again.",
+        "Rowan compared the card’s blue with the line beneath the letter’s clip. The colours matched.",
+        "“The note explains the ink. This card lets us demonstrate it without touching the letter.”",
+        "Mrs Bell turned the catalogue. On the back of the letter’s entry was a warning, hidden by an old mounting strip: KEEP THIS SUN-INK LETTER OUT OF BRIGHT LIGHT.",
+        "Kit raised an eyebrow. “An excellent place to hide the instructions.”"
+      ],
+      "prompt": "Take the tested sample back to the letter.",
+      "choices": [
+        [
+          "Bring the evidence together.",
+          "deduce"
+        ]
+      ]
+    },
+    "handling": {
+      "title": "The wrong kind of opening",
+      "number": "Investigation",
+      "progress": 62,
+      "text": [
+        "Ellis demonstrated his actions on the spare case. He could straighten the label and wipe the glass. He couldn’t reach inside without unlocking it.",
+        "They checked the hinges, the back and the base. No sliding panel. No gap large enough for a sheet of paper.",
+        "“That doesn’t explain the missing words,” Ellis said.",
+        "“No,” Rowan said. “But it tells us what your visit could actually have done.”",
+        "Mrs Bell fetched an opaque display cover. She placed it over the letter’s case while they compared the locks.",
+        "When she lifted the cover, the first line of writing was faintly blue again.",
+        "Everyone stopped.",
+        "Mrs Bell switched off the spotlight. They waited. A second line slowly appeared.",
+        "Kit looked at the notebook. “The page hasn’t changed. The light has.”",
+        "On the back of the catalogue entry, beneath an old mounting strip, they found Mara’s warning: KEEP THIS SUN-INK LETTER OUT OF BRIGHT LIGHT. COLOUR RETURNS IN SHADE.",
+        "“Sun-ink,” Rowan read. “Her own invention. We’ve just seen what it does.”",
+        "Ellis sat down. “I’ve never been so pleased to be less interesting than a lamp.”"
+      ],
+      "prompt": "Take the observation back to the letter.",
+      "choices": [
+        [
+          "Bring the evidence together.",
+          "deduce"
+        ]
+      ]
+    },
+    "deduce": {
+      "title": "What the clip protected",
+      "number": "Investigation",
+      "progress": 80,
+      "text": [
+        "Rowan looked from the brass clip to the new spotlight.",
+        "“The letter wasn’t stolen. The writing changed after the light came on. The clip kept a tiny patch shaded, so that patch stayed blue.”",
+        "“And the fingerprints?” Mrs Bell asked.",
+        "“Paint from the label,” Kit said. “They told us Ellis touched the glass. We nearly made them tell us more than that.”",
+        {
+          "variants": [
+            {
+              "visited": [
+                "photo",
+                "archive"
+              ],
+              "text": "Rowan laid the opening photograph beside the case. “The tear and crease match. It’s the same sheet.” The tested spiral card lay beside the catalogue. The ink had hidden in light and returned in shade, just as Mara’s warning described."
+            },
+            {
+              "visited": [
+                "photo",
+                "handling"
+              ],
+              "text": "Rowan laid the opening photograph beside the case. “The tear and crease match. It’s the same sheet.” And beneath the opaque cover, they had watched the first lines reappear. Mara’s catalogue warning explained exactly what they had observed."
+            },
+            {
+              "visited": [
+                "witness",
+                "archive"
+              ],
+              "text": "Kit opened the timeline. “Mrs Bell saw the words after Ellis finished. They disappeared after the spotlight came on.” The tested spiral card lay beside the catalogue. The ink had hidden in light and returned in shade, just as Mara’s warning described."
+            },
+            {
+              "visited": [
+                "witness",
+                "handling"
+              ],
+              "text": "Kit opened the timeline. “Mrs Bell saw the words after Ellis finished. They disappeared after the spotlight came on.” And beneath the opaque cover, they had watched the first lines reappear. Mara’s catalogue warning explained exactly what they had observed."
+            }
+          ]
+        },
+        "Mrs Bell moved the spotlight away from the letter. In the softer light, more of the writing slowly returned.",
+        "They had an explanation. Now they needed a way to present it that visitors could see for themselves.",
+        "“We can restore the shaded display,” Mrs Bell said. “Or, if your evidence supports another approach, we can make that part of the exhibition.”"
+      ],
+      "prompt": "How should Rowan use the evidence gathered?",
+      "choices": [
+        [
+          "Restore the letter in shade and reveal its message.",
+          "shadeEnd"
+        ],
+        [
+          "Use the saved photograph to rebuild the message as a visitor puzzle.",
+          "photoEnd",
+          "photo"
+        ],
+        [
+          "Demonstrate the tested ink sample for the opening audience.",
+          "sampleEnd",
+          "archive"
+        ]
+      ]
+    },
+    "shadeEnd": {
+      "title": "The invention in the shadows",
+      "number": "Your ending",
+      "progress": 100,
+      "text": [
+        "Mrs Bell moved the spotlight away from the case and brought a small shaded viewing hood from the workshop.",
+        "Beneath it, the letter’s words returned, including the line hidden by glare in the opening photograph.",
+        "“Where daylight rests, my final garden grows. Look beneath the window seat.”",
+        "Mrs Bell opened the compartment under the hall’s window seat. Inside stood a paper garden in a glass dome. Its flowers were painted with Mara’s sun-ink.",
+        "In shade, blue petals appeared. As Mrs Bell tilted the dome towards the light, they faded, leaving a different garden drawn beneath them in ordinary green ink.",
+        "Two gardens in the same tiny space.",
+        "At six, visitors gathered beneath the hood to read the letter, then watched the changing flowers. Ellis fitted a new label describing exactly what the light did.",
+        "Kit studied it. “Nothing about suspicious fingerprints?”",
+        "“Not enough room,” Ellis said.",
+        "Rowan smiled. The mystery had become part of the exhibit, but the letter itself was still there for people to discover. All it had needed was somewhere out of the spotlight."
+      ],
+      "ending": true
+    },
+    "photoEnd": {
+      "title": "The picture that became a puzzle",
+      "number": "Your ending",
+      "progress": 100,
+      "text": [
+        "Rowan placed the saved photograph beside the returning letter. The photograph preserved the beginning; the shaded original supplied the final line hidden by the reflection.",
+        "Together, they read: “Where daylight rests, my final garden grows. Look beneath the window seat.”",
+        "Mrs Bell found a glass dome inside the seat. Under it, paper flowers painted with Mara’s sun-ink changed from blue to green as she moved them between shade and light.",
+        "Rowan had another idea. Instead of announcing the hiding place, they could let visitors reconstruct the message too.",
+        "Kit copied sections of the photograph onto clue cards. Ellis added a picture of the brass clip and a timeline showing when the spotlight came on. Mrs Bell checked every clue against the original.",
+        "By six, the exhibition had its own investigation trail. The first family argued cheerfully about whether a lamp counted as a suspect.",
+        "Their youngest detective noticed the clip.",
+        "Rowan caught Kit’s eye. “They’ve got the important bit.”",
+        "The family set off towards the window seat. This time, Rowan knew the answer—and got to watch someone else discover it."
+      ],
+      "ending": true
+    },
+    "sampleEnd": {
+      "title": "A room full of disappearing spirals",
+      "number": "Your ending",
+      "progress": 100,
+      "text": [
+        "“Show them the sample,” Rowan said. “We can explain the letter without experimenting on it again.”",
+        "Mrs Bell agreed. While the original recovered in shade, Rowan arranged the tested spiral card beneath the reading lamp.",
+        "At six, Kit asked the audience what they thought would happen. Ellis slid the paper sleeve halfway over the card.",
+        "The exposed blue faded. The covered blue remained. When he shaded the whole card, the missing half returned.",
+        "Hands shot up before Kit had finished explaining.",
+        "Mrs Bell read the restored letter’s final line: “Where daylight rests, my final garden grows. Look beneath the window seat.”",
+        "Inside the seat they found Mara’s last invention: a paper garden whose blue sun-ink flowers faded in light to reveal green ones beneath.",
+        "By the end of the opening, visitors were suggesting designs for secret signs, changing pictures and birthday cards that revealed themselves in shade. Mrs Bell offered to run a workshop using the museum’s remaining sample cards.",
+        "Ellis wiped the blue paint from his gloves.",
+        "“Good thing you investigated the evidence,” he told Rowan. “I’d have made a terrible final invention.”"
+      ],
+      "ending": true
+    }
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "id": "loch",
+  "title": "The Mystery of the Mooing Loch",
+  "age": "6–8",
+  "type": "Mystery adventure",
+  "subtitle": "One strange sound. A few curious clues. And a mystery waiting to be solved.",
+  "description": "A strange sound floats across the water. Join Rowan to follow the clues and discover what’s making that enormous moo.",
+  "icon": "☾",
+  "button": "Read the mystery →",
+  "saveKey": "little-lantern-mooing-loch-v1",
+  "nodes": {
+    "start": {
+      "title": "The strange moo",
+      "number": "Scene 1",
+      "progress": 8,
+      "text": [
+        "The sun was slipping behind the hills when Rowan heard it.",
+        "<strong class=\"sound\">Moooooooo!</strong>",
+        "Rowan stopped beside the loch. “Did you hear that?” Across the water, something splashed. Then came the sound again.",
+        "“That sounds like a cow,” Rowan whispered. “On a lake?”",
+        "Rowan grinned. “Well, there’s only one way to find out.”",
+        "Near the path stood an old wooden boathouse. Beyond it, a patch of reeds rustled beside the water. In the soft mud, Rowan spotted enormous footprints leading towards the reeds.",
+        "They looked almost as big as Rowan’s head.",
+        "Whatever was making that noise, Rowan had a feeling this was going to be an interesting evening."
+      ],
+      "prompt": "What should Rowan investigate first?",
+      "choices": [
+        [
+          "Follow the enormous footprints into the reeds.",
+          "footprints"
+        ],
+        [
+          "Explore the old boathouse for clues.",
+          "boathouse"
+        ]
+      ]
+    },
+    "footprints": {
+      "title": "The enormous footprints",
+      "number": "Scene 2",
+      "progress": 18,
+      "text": [
+        "Rowan followed the footprints carefully.",
+        "They were strange prints: three long marks pointing forwards, with a little splash of mud around each one.",
+        "“Monster feet?” Rowan wondered.",
+        "A rustle came from the reeds. Rowan froze. Another rustle.",
+        "<strong class=\"sound\">KRAAAAK!</strong>",
+        "A huge grey bird burst out of the grass, flapped across the path and landed on a nearby rock. It stared at Rowan as though Rowan had interrupted something terribly important.",
+        "“A heron!” Rowan laughed.",
+        "The bird had long legs, enormous feet and absolutely no interest in explaining itself. It gave one more squawk and flew away.",
+        "Rowan looked at the prints again. Three long toes. Just like the heron’s feet.",
+        "“So much for the Loch Ness Monster,” Rowan said.",
+        "Then the moo rolled across the water once more. <strong class=\"sound\">Moooooooo!</strong>",
+        "The heron certainly hadn’t made that sound.",
+        "Rowan brushed the mud from their hands and headed back towards the boathouse. The footprints were a good clue, but they had led to the wrong answer.",
+        "And that was the trouble with mysteries: sometimes a clue told you something interesting without telling you what you actually wanted to know."
+      ],
+      "prompt": "The footprints have been investigated. Let’s try the other lead.",
+      "choices": [
+        [
+          "Return to the boathouse and investigate.",
+          "boathouse"
+        ]
+      ]
+    },
+    "boathouse": {
+      "title": "Inside the boathouse",
+      "number": "Scene 3",
+      "progress": 30,
+      "text": [
+        "The boathouse door groaned when Rowan pushed it open.",
+        "Inside, the air smelled of damp wood and lake water. Sunlight slipped through the gaps between the boards, lighting up a jumble of ropes, buckets and old fishing nets.",
+        "An old rowing boat rested on wooden supports near the doorway. A faded photograph on the wall showed two matching boats out on the loch.",
+        "Rowan heard the moo again, quieter this time. “Moooo…” It seemed to come from somewhere near the shore.",
+        "Rowan noticed two things.",
+        "First, there were long scratches along the side of the boat. They were low down, roughly the same height as the loose wooden oar lying beside it.",
+        "Second, one end of the oar was worn smooth and shiny, as if it had been rubbing against something for a long time.",
+        "“Hmm,” Rowan said. “That’s odd.”",
+        "Neither clue explained the moo. But perhaps they were worth a closer look."
+      ],
+      "prompt": "What should Rowan do?",
+      "choices": [
+        [
+          "Investigate the scratches along the boat.",
+          "scratches"
+        ],
+        [
+          "Test the loose oar against the boat’s wooden edge.",
+          "oar"
+        ]
+      ]
+    },
+    "scratches": {
+      "title": "A mark in the wood",
+      "number": "Scene 3A",
+      "progress": 38,
+      "text": [
+        "Rowan crouched beside the boat and looked closely at the scratches.",
+        "The marks curved towards the back of the boat. Beside them, the wood was worn smooth.",
+        "Rowan ran a finger just above the scratches without touching the rough wood.",
+        "Something wooden must have rubbed against the boat, over and over.",
+        "Rowan glanced towards the water. The wind was picking up, making tiny waves slap against the shore.",
+        "Could the wind be part of the mystery?"
+      ],
+      "prompt": "Rowan has found a clue. What next?",
+      "choices": [
+        [
+          "Head down to the shore and listen carefully.",
+          "acrossWater"
+        ]
+      ]
+    },
+    "oar": {
+      "title": "A very odd sound",
+      "number": "Scene 3B",
+      "progress": 38,
+      "text": [
+        "Rowan carried the oar to the boat beside the open doorway.",
+        "Rowan gently slid the oar against its wooden edge. A gust of wind whistled through the doorway.",
+        "<strong class=\"sound\">Creeeeeeak.</strong>",
+        "Rowan jumped.",
+        "It wasn’t a moo, exactly. But it was a surprisingly deep, hollow sound.",
+        "Rowan tried again, gently this time. <strong class=\"sound\">Creeeeak.</strong>",
+        "“Now that,” Rowan said, “is interesting.”"
+      ],
+      "prompt": "The oar might be important. What next?",
+      "choices": [
+        [
+          "Follow the sound towards the far side of the shore.",
+          "acrossWater"
+        ]
+      ]
+    },
+    "acrossWater": {
+      "title": "Across the water",
+      "number": "Scene 4",
+      "progress": 50,
+      "text": [
+        "Rowan stood by the shore and listened.",
+        "The wind was stronger now. Little waves bumped against the rocks, and the reeds swished together with a papery whisper.",
+        "Then the sound came again. <strong class=\"sound\">Moooooooo!</strong>",
+        "Rowan looked across the loch.",
+        "Two places seemed worth investigating. A thick patch of reeds shook near the water’s edge. Further along, a narrow rocky inlet sheltered a small stretch of shoreline where a small boat could just be seen.",
+        "“Maybe the sound is coming from the reeds,” Rowan thought. “Or maybe it’s coming from that little inlet.”",
+        "The boathouse had offered clues, but no answer yet.",
+        "Rowan took a deep breath. “Come on, mystery. I’m ready for you.”"
+      ],
+      "prompt": "Where should Rowan look next?",
+      "choices": [
+        [
+          "Search the noisy reeds.",
+          "reeds"
+        ],
+        [
+          "Head to the rocky inlet.",
+          "inlet"
+        ]
+      ]
+    },
+    "reeds": {
+      "title": "The noisy reeds",
+      "number": "Scene 5",
+      "progress": 61,
+      "text": [
+        "Rowan tiptoed towards the reeds.",
+        "The closer Rowan got, the louder the rustling became. Something was definitely moving in there.",
+        "Rowan crouched low and peered between the tall green stalks.",
+        "Two round eyes stared back. Then another pair appeared. And another.",
+        "With a tremendous flapping of wings, a group of ducks burst out of the reeds. One flew straight over Rowan’s head. Another landed on the water with a splash. A third quacked so loudly that Rowan nearly sat down in surprise.",
+        "<strong class=\"sound\">“Quack! QUACK! Quack!”</strong>",
+        "Rowan started laughing.",
+        "The ducks paddled away, looking rather pleased with themselves.",
+        "There were no monsters hiding in the reeds. No cows either. Just a family of ducks enjoying a perfectly ordinary evening and making a truly extraordinary amount of noise.",
+        "Rowan listened again. The moo came from further along the shore.",
+        "The ducks had been a distraction, not an answer.",
+        "Still, Rowan had learned something useful: the sound was coming from beyond the reeds, near the rocky inlet."
+      ],
+      "prompt": "The ducks weren’t the answer. Continue investigating.",
+      "choices": [
+        [
+          "Head to the rocky inlet.",
+          "inlet"
+        ]
+      ]
+    },
+    "inlet": {
+      "title": "The rocky inlet",
+      "number": "Scene 6",
+      "progress": 73,
+      "text": [
+        "The path to the inlet wound between smooth grey stones and patches of bright yellow gorse.",
+        "Rowan stepped carefully, keeping an eye on the water.",
+        "There, tucked beside the rocks, was another rowing boat, just like the one in the boathouse photograph.",
+        "It bobbed gently on the waves. A rope hung loose from its front, and the wind nudged the boat towards the shore.",
+        "Then Rowan heard it. <strong class=\"sound\">Creeeeak.</strong>",
+        "The boat shifted. <strong class=\"sound\">Moooooooo!</strong>",
+        "Rowan’s eyes widened.",
+        "The sound came from the side of the boat, where one of its oars had slipped against the wooden edge. Each time a wave pushed the boat, the oar rubbed against the wood. The hollow scrape made a deep, strange noise.",
+        "Rowan watched it happen again. <strong class=\"sound\">Creeeeak. Moooooooo!</strong>",
+        "“Wait a minute,” Rowan whispered. “The boat is making the moo!”",
+        "The marks on the boat in the boathouse. The worn end of its oar. And now this matching boat, creaking as the wind blew.",
+        "Suddenly, all the clues fitted together. Rowan had found the answer.",
+        "But before Rowan could celebrate, a voice called from the path behind.",
+        "“Ah! There you are!”",
+        "A park ranger hurried down towards the shore, looking relieved.",
+        "“I’ve been looking for that boat,” the ranger said. “The wind must have loosened its rope. I wondered what that strange noise was!”",
+        "Rowan grinned. “I think I can explain that.”"
+      ],
+      "prompt": "Show the ranger what Rowan discovered.",
+      "choices": [
+        [
+          "Explain how the oar makes the mooing sound.",
+          "reveal"
+        ]
+      ]
+    },
+    "reveal": {
+      "title": "The answer",
+      "number": "Scene 7",
+      "progress": 84,
+      "text": [
+        "Rowan showed the ranger where the oar scraped against the side of the boat.",
+        "The ranger watched it happen. <strong class=\"sound\">Creeeeak. Moooooooo!</strong>",
+        "“Oh, well spotted!” the ranger said. “The wind pushes the boat, the oar rubs against the wood, and the wood makes that hollow sound. From across the water, it really does sound a bit like a cow.”",
+        "“A cow that lives in a lake,” Rowan said.",
+        "The ranger laughed. “A very unusual cow.”",
+        "Together, they pulled the boat safely onto the shore and secured it so it couldn’t drift away again.",
+        "“So there wasn’t a monster?” Rowan asked.",
+        "“Not this time,” said the ranger. “But Loch Ness has plenty of stories. Some mysteries are harder to explain than others.”",
+        "As if on cue, something small and brown popped its head out of the water nearby.",
+        "An otter!",
+        "It blinked at Rowan, gave a tiny snort, and disappeared beneath the surface.",
+        "Rowan stared at the ripples. “Well,” Rowan said, “I’m not ruling anything out.”",
+        "The ranger smiled. “There’s always another mystery to investigate.”",
+        "The sky had turned pink and gold. The strange moo was gone, the boat was safe, and Rowan had a story that would be hard to believe unless someone had been there to hear it.",
+        "And now there was just one last decision to make."
+      ],
+      "prompt": "How should Rowan finish the adventure?",
+      "choices": [
+        [
+          "Help the ranger finish securing the boat and learn a useful knot.",
+          "endingHelp"
+        ],
+        [
+          "Walk back with the ranger and hear another story about the loch.",
+          "endingStory"
+        ],
+        [
+          "Sit quietly by the water and see whether the otter comes back.",
+          "endingOtter"
+        ]
+      ]
+    },
+    "endingHelp": {
+      "title": "The helpful explorer",
+      "number": "Your ending",
+      "progress": 100,
+      "ending": true,
+      "text": [
+        "The ranger showed Rowan how to tie a simple knot that would hold the rope firmly in place. Rowan practised once, then twice, until the knot sat neatly against the wood.",
+        "“There,” the ranger said. “You’ve helped keep the boat safe.”",
+        "Rowan looked back across the loch. The hills were darkening, and the first star had appeared overhead.",
+        "“I came looking for a monster,” Rowan said, “and ended up learning how to tie a knot.”",
+        "“That’s how adventures work sometimes,” the ranger replied.",
+        "Rowan headed home, already wondering what tomorrow might bring."
+      ]
+    },
+    "endingStory": {
+      "title": "Another story",
+      "number": "Your ending",
+      "progress": 100,
+      "ending": true,
+      "text": [
+        "As Rowan and the ranger walked back along the path, the ranger told a story about a night when the loch had frozen so still that the mountains seemed to float upside down in the water.",
+        "“Did that really happen?” Rowan asked.",
+        "“The mountains were definitely there,” said the ranger. “The rest is a story.”",
+        "Rowan laughed. There were still plenty of mysteries in the world, and not all of them needed solving before bedtime.",
+        "At the edge of the path, Rowan looked back once more at the loch.",
+        "For a moment, something rippled far out in the water.",
+        "Rowan smiled and kept walking."
+      ]
+    },
+    "endingOtter": {
+      "title": "The quiet watcher",
+      "number": "Your ending",
+      "progress": 100,
+      "ending": true,
+      "text": [
+        "Rowan settled on a smooth rock and waited quietly.",
+        "For a while, nothing happened. The water rippled. A bird called from the trees. The sky grew darker.",
+        "Then two little eyes appeared above the water.",
+        "The otter paddled closer, holding a fish in its paws. It glanced at Rowan, decided Rowan was no trouble at all, and carried on with its supper.",
+        "Rowan watched until the otter slipped away into the reeds.",
+        "Not every discovery needed a big reveal. Sometimes it was enough to be in the right place, at the right time, and quiet enough to notice.",
+        "Rowan stood, brushed off the dust, and headed home beneath the first stars."
+      ]
+    }
+  }
+}
