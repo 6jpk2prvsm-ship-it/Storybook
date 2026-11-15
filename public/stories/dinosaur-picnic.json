@@ -3,11 +3,12 @@
   "ageRange": [5,8],
   "category": "Mystery",
   "tags": ["dinosaurs","animals"],
+  "personalisation": {"version": 1, "defaultName": "Pip"},
   "title": "The Great Dinosaur Picnic Mystery",
   "age": "5–8",
   "type": "Mystery adventure",
-  "subtitle": "A missing melon. Some enormous footprints. Can you help Pip follow the clues?",
-  "description": "The enormous melon has vanished from the dinosaur picnic. Join Pip to investigate the clues, follow its bumpy trail and uncover what really happened.",
+  "subtitle": "A missing melon. Some enormous footprints. Can you help {{name}} follow the clues?",
+  "description": "The enormous melon has vanished from the dinosaur picnic. Join {{name}} to investigate the clues, follow its bumpy trail and uncover what really happened.",
   "icon": "🦕",
   "button": "Solve the mystery →",
   "saveKey": "where-pages-wander-dinosaur-picnic-v1",
@@ -17,20 +18,20 @@
       "number": "Scene 1",
       "progress": 8,
       "text": [
-        "Pip put down the picnic basket.",
+        "{{name}} put down the picnic basket.",
         "“Right,” said the little triceratops. “Blanket. Berries. Enormous melon.”",
-        "Pip looked at the low wooden stand.",
+        "{{name}} looked at the low wooden stand.",
         "“Blanket. Berries…”",
         "The melon had gone.",
-        "It had been round and green, with dark stripes. Pip had been looking forward to it all morning.",
+        "It had been round and green, with dark stripes. {{name}} had been looking forward to it all morning.",
         "Nearby, Moss the stegosaurus shook a fly from one ear.",
         "“Is it in your basket?” Moss asked.",
-        "Pip checked. Three berries and a spoon.",
+        "{{name}} checked. Three berries and a spoon.",
         "“Unless it’s become very small.”",
         "Beside the stand lay some enormous footprints. A curved scrape marked the soil.",
         "“I saw something green!” called a little duck-billed dinosaur by the flowers."
       ],
-      "prompt": "What should Pip investigate first?",
+      "prompt": "What should {{name}} investigate first?",
       "choices": [
         [
           "Look closely around the melon stand.",
@@ -47,18 +48,18 @@
       "number": "Scene 2",
       "progress": 25,
       "text": [
-        "Pip crouched beside the stand.",
+        "{{name}} crouched beside the stand.",
         "A thin curl of green melon skin clung to its rough wooden edge.",
-        "“You left a bit behind,” Pip murmured.",
+        "“You left a bit behind,” {{name}} murmured.",
         "Below it, something had pressed a shallow groove into the soft soil. The groove curved away downhill, with little gaps where the ground grew hard.",
-        "Pip rolled a fallen seed pod along it.",
-        "The pod wobbled, bumped over a pebble and stopped against Pip’s foot.",
+        "{{name}} rolled a fallen seed pod along it.",
+        "The pod wobbled, bumped over a pebble and stopped against {{name}}’s foot.",
         "“Perhaps the melon rolled too.”",
         "But what had started it rolling?",
-        "The groove ran through an enormous three-toed footprint. Pip could fit both front feet inside it and still have room to wiggle.",
+        "The groove ran through an enormous three-toed footprint. {{name}} could fit both front feet inside it and still have room to wiggle.",
         "More prints led towards a wide tree.",
         "Behind the trunk, something large and brown moved.",
-        "Pip could hear a rumbling voice.",
+        "{{name}} could hear a rumbling voice.",
         "“One here. One there. Oh, that looks lovely.”"
       ],
       "prompt": "The enormous footprints lead towards the tree.",
@@ -75,7 +76,7 @@
       "progress": 25,
       "text": [
         "The little duck-billed dinosaur was wearing a daisy behind each ear.",
-        "“What did you see?” Pip asked.",
+        "“What did you see?” {{name}} asked.",
         "“Something green went past. Bump, bump, bump! Right down the slope.”",
         "“Did it have legs?”",
         "The little dinosaur thought carefully.",
@@ -84,11 +85,11 @@
         "“I waved at it.”",
         "“Did it wave back?”",
         "“No. Rather rude.”",
-        "Pip smiled. “Melons are like that.”",
+        "{{name}} smiled. “Melons are like that.”",
         "The little dinosaur pointed towards a wide tree.",
         "“Rex went past just before it happened. Perhaps he knows.”",
         "Across the soft soil ran a line of enormous three-toed footprints. Beyond the tree, someone was humming so deeply that a leaf trembled.",
-        "Pip followed the prints."
+        "{{name}} followed the prints."
       ],
       "prompt": "Rex may know something about the missing melon.",
       "choices": [
@@ -105,7 +106,7 @@
       "text": [
         "Rex stood beneath the tree with a cushion tucked under his chin.",
         "He lowered it onto a blanket, then nudged it straight with his nose.",
-        "“Comfortable?” he asked Pip.",
+        "“Comfortable?” he asked {{name}}.",
         "“I haven’t sat down yet.”",
         "“Good point.”",
         {
@@ -114,31 +115,31 @@
               "visited": [
                 "stand"
               ],
-              "text": "“Our melon’s missing,” Pip said. “I found some skin on the stand and a mark where it might have rolled. Your footprints are beside it.”"
+              "text": "“Our melon’s missing,” {{name}} said. “I found some skin on the stand and a mark where it might have rolled. Your footprints are beside it.”"
             },
             {
               "visited": [
                 "witness"
               ],
-              "text": "“Our melon’s missing,” Pip said. “Someone saw a stripy green thing bouncing downhill. They saw you walk past just before.”"
+              "text": "“Our melon’s missing,” {{name}} said. “Someone saw a stripy green thing bouncing downhill. They saw you walk past just before.”"
             }
           ]
         },
         "“I was bringing these,” Rex said. “Didn’t notice a melon. I could hardly see over the cushions.”",
-        "He came back to the stand with Pip. Moss followed, scratching one ankle with the other foot.",
-        "At the edge of Rex’s footprint, Pip stopped.",
+        "He came back to the stand with {{name}}. Moss followed, scratching one ankle with the other foot.",
+        "At the edge of Rex’s footprint, {{name}} stopped.",
         "A narrow groove ran down into the print and up the other side. Its edges were fresh and smooth.",
-        "“Look! Something rolled over your footprint,” Pip said. “After you made it.”",
+        "“Look! Something rolled over your footprint,” {{name}} said. “After you made it.”",
         "Rex peered down. “So my feet got here first.”",
-        "Pip nodded. There were no footsteps beside the rolling mark.",
-        "As Moss turned, Pip noticed a little green curl stuck near the end of the stegosaurus’s tail.",
+        "{{name}} nodded. There were no footsteps beside the rolling mark.",
+        "As Moss turned, {{name}} noticed a little green curl stuck near the end of the stegosaurus’s tail.",
         "“You’ve collected something.”",
         "Moss twisted to look, but the tail turned too.",
         "“Have I?”",
-        "Pip gently lifted off the curl. Melon skin. Just ahead, the rolling mark disappeared where the slope became grassy.",
-        "Below lay a patch of ferns. Beside Pip, a little hill offered a view across the grass."
+        "{{name}} gently lifted off the curl. Melon skin. Just ahead, the rolling mark disappeared where the slope became grassy.",
+        "Below lay a patch of ferns. Beside {{name}}, a little hill offered a view across the grass."
       ],
-      "prompt": "How should Pip look for the melon?",
+      "prompt": "How should {{name}} look for the melon?",
       "choices": [
         [
           "Follow the rolling marks downhill.",
@@ -155,21 +156,21 @@
       "number": "Scene 4",
       "progress": 67,
       "text": [
-        "Pip lowered their head and followed the last clear mark.",
+        "{{name}} lowered {{possessive}} head and followed the last clear mark.",
         "It ended at a tuft of grass.",
         "Beyond the tuft was a small dent. Then another.",
-        "“Bump,” said Pip, stepping beside the first.",
+        "“Bump,” said {{name}}, stepping beside the first.",
         "“Bump,” said Rex, stepping carefully beside the next.",
         "“Bump,” said Moss.",
         "The fly landed on Moss’s nose.",
         "“Pffff!”",
         "The fly left.",
-        "Near the bottom of the slope, Pip found a fresh scrap of green skin on a stone. Beyond it, the grass bent towards a thick clump of ferns.",
+        "Near the bottom of the slope, {{name}} found a fresh scrap of green skin on a stone. Beyond it, the grass bent towards a thick clump of ferns.",
         "One fern was folded over, as though something round had pushed beneath it.",
-        "Pip stopped beside the leaves.",
+        "{{name}} stopped beside the leaves.",
         "From inside came a faint rustle.",
         "“Melons don’t usually rustle,” Rex whispered.",
-        "“Perhaps it’s being polite now,” said Pip."
+        "“Perhaps it’s being polite now,” said {{name}}."
       ],
       "prompt": "Something is rustling beneath the ferns.",
       "choices": [
@@ -184,23 +185,23 @@
       "number": "Scene 4",
       "progress": 67,
       "text": [
-        "Pip climbed the little hill. Rex and Moss waited below, where there was more room for their feet.",
-        "From the top, Pip could see the picnic blanket, the empty stand and the slope below it.",
+        "{{name}} climbed the little hill. Rex and Moss waited below, where there was more room for their feet.",
+        "From the top, {{name}} could see the picnic blanket, the empty stand and the slope below it.",
         "Something green lay under the ferns.",
         "But nearly everything here was green.",
-        "Pip narrowed their eyes.",
+        "{{name}} narrowed {{possessive}} eyes.",
         "A leaf. Another leaf. A rather leaf-shaped leaf.",
         "Then the breeze lifted a fern.",
         "Dark stripes!",
-        "“I think I’ve found it!” Pip called.",
-        "Looking back uphill, Pip saw a line of flattened grass stretching towards the stand. There was nothing between the two places to stop a rolling melon.",
-        "Pip walked down to the others and showed them where to look.",
+        "“I think I’ve found it!” {{name}} called.",
+        "Looking back uphill, {{name}} saw a line of flattened grass stretching towards the stand. There was nothing between the two places to stop a rolling melon.",
+        "{{name}} walked down to the others and showed them where to look.",
         "Moss bent low. Rex bent lower.",
         "“I can see a beetle,” Rex whispered.",
         "“Beside the beetle.”",
         "“Oh. Much bigger.”"
       ],
-      "prompt": "Pip has spotted something stripy beneath the ferns.",
+      "prompt": "{{name}} has spotted something stripy beneath the ferns.",
       "choices": [
         [
           "Go down to the stripy shape.",
@@ -213,9 +214,9 @@
       "number": "Scene 5",
       "progress": 85,
       "text": [
-        "Pip lifted a fern.",
+        "{{name}} lifted a fern.",
         "There sat the melon, round and green and wonderfully stripy. A beetle walked across it, making the leaves rustle.",
-        "“Excuse us,” Pip said. “That’s our lunch.”",
+        "“Excuse us,” {{name}} said. “That’s our lunch.”",
         "The beetle stepped onto a leaf.",
         {
           "variants": [
@@ -223,31 +224,31 @@
               "visited": [
                 "slope"
               ],
-              "text": "Pip looked back at the dents. “It bumped down the slope and rolled in here.”"
+              "text": "{{name}} looked back at the dents. “It bumped down the slope and rolled in here.”"
             },
             {
               "visited": [
                 "hill"
               ],
-              "text": "Pip pointed uphill. “From the top, I could see its path all the way from the stand.”"
+              "text": "{{name}} pointed uphill. “From the top, I could see its path all the way from the stand.”"
             }
           ]
         },
-        "A shallow scrape marked one side of the melon. Pip held up the little curl from Moss’s tail. It fitted the scraped patch.",
+        "A shallow scrape marked one side of the melon. {{name}} held up the little curl from Moss’s tail. It fitted the scraped patch.",
         "Moss blinked.",
         "“My tail was beside the stand,” Moss said slowly. “And that fly was tickling my ear.”",
         "The stegosaurus gave a tiny swish.",
-        "Pip watched the tail move sideways.",
+        "{{name}} watched the tail move sideways.",
         "“Did you do that when the melon was there?”",
         "“Oh,” said Moss. “I think I did.”",
-        "Pip set a round seed pod on a flat stone, with nobody standing downhill.",
+        "{{name}} set a round seed pod on a flat stone, with nobody standing downhill.",
         "“Can you show us? Just a little nudge.”",
         "Moss moved their tail gently. It touched the pod.",
         "Off it rolled.",
-        "Pip caught it against one foot.",
+        "{{name}} caught it against one foot.",
         "“Your tail pushed the melon off the stand! Then it rolled over Rex’s footprint and down the slope.”",
         "“I’m sorry,” Moss said. “I didn’t feel it.”",
-        "“It’s only scraped,” said Pip. “And now we’ve found it.”",
+        "“It’s only scraped,” said {{name}}. “And now we’ve found it.”",
         "Rex settled onto the grass with a soft thump.",
         "“Excellent. Detecting has made me hungry.”",
         "Above them, the ferns made a cool green roof. Up the slope, the picnic blanket waited beneath the tree."
@@ -269,13 +270,13 @@
       "number": "Your ending",
       "progress": 100,
       "text": [
-        "Together, Pip and Moss pushed the melon gently uphill. Rex walked behind to stop it slipping back.",
+        "Together, {{name}} and Moss pushed the melon gently uphill. Rex walked behind to stop it slipping back.",
         "At the picnic blanket, he tucked a cushion firmly against it.",
         "“There,” he said. “A seat for our runaway guest.”",
         "Everyone gathered beneath the tree. The little duck-billed dinosaur brought the berries. Moss fetched the basket. Soon there were juicy melon pieces for everyone.",
-        "Pip took a bite. Sweet juice dribbled down their chin.",
+        "{{name}} took a bite. Sweet juice dribbled down {{possessive}} chin.",
         "“Worth looking for?” asked Rex.",
-        "Pip nodded, mouth full.",
+        "{{name}} nodded, mouth full.",
         "Moss sat where their tail could stretch across an empty patch of grass.",
         "The fly came back.",
         "Moss watched it land on a daisy, then gently blew it away.",
@@ -289,17 +290,17 @@
       "number": "Your ending",
       "progress": 100,
       "text": [
-        "“The melon found a good spot,” Pip said. “Let’s stay here.”",
+        "“The melon found a good spot,” {{name}} said. “Let’s stay here.”",
         "Rex brought the cushions. Moss fetched the blanket. The little duck-billed dinosaur carried the berries downhill, very carefully, one bowl at a time.",
         "Soon everyone sat in the fern shade, with Moss’s tail stretched safely into an empty space.",
         "They shared the melon. Its middle was pink and sweet.",
-        "Pip saved a tiny piece for the beetle, placing it on a leaf beside the picnic.",
+        "{{name}} saved a tiny piece for the beetle, placing it on a leaf beside the picnic.",
         "The beetle climbed aboard.",
-        "“You’re welcome,” Pip told it.",
+        "“You’re welcome,” {{name}} told it.",
         "The little dinosaur leaned against a cushion.",
         "“Perhaps tomorrow we should let the berries choose where we eat.”",
-        "Pip closed their eyes and smiled.",
-        "“Tomorrow,” they said, “we’re bringing a lid.”"
+        "{{name}} closed {{possessive}} eyes and smiled.",
+        "“Tomorrow,” {{subject}} said, “we’re bringing a lid.”"
       ],
       "ending": true
     }
