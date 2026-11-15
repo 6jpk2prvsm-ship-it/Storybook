@@ -1,5 +1,8 @@
 {
   "id": "letter",
+  "ageRange": [9,11],
+  "category": "Mystery",
+  "tags": ["science","clues"],
   "title": "The Letter That Disappeared",
   "age": "9–11",
   "type": "Mystery adventure",

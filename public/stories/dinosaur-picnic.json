@@ -1,5 +1,8 @@
 {
   "id": "dinosaur-picnic",
+  "ageRange": [5,8],
+  "category": "Mystery",
+  "tags": ["dinosaurs","animals"],
   "title": "The Great Dinosaur Picnic Mystery",
   "age": "5–8",
   "type": "Mystery adventure",

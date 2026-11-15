@@ -1,5 +1,8 @@
 {
   "id": "moonseed",
+  "ageRange": [6,8],
+  "category": "Quest",
+  "tags": ["magic","nature"],
   "title": "The Moonseed and the Sleeping Garden",
   "age": "6–8",
   "type": "Quest adventure",

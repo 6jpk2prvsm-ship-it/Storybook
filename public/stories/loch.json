@@ -1,5 +1,8 @@
 {
   "id": "loch",
+  "ageRange": [6,8],
+  "category": "Mystery",
+  "tags": ["animals","nature"],
   "title": "The Mystery of the Mooing Loch",
   "age": "6–8",
   "type": "Mystery adventure",
