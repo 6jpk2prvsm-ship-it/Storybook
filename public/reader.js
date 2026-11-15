@@ -4,6 +4,38 @@ const $ = id => document.getElementById(id);
 const trail = [];
 let book;
 let sceneId = 'start';
+let shelfEntries = [];
+
+function filterShelf() {
+  const age = $('filterAge').value;
+  const category = $('filterType').value;
+  const tag = $('filterTheme').value;
+  const range = age ? age.split('-').map(Number) : null;
+  const matches = shelfEntries.filter(entry =>
+    (!range || (entry.ageRange[0] <= range[1] && entry.ageRange[1] >= range[0])) &&
+    (!category || entry.category === category) &&
+    (!tag || entry.tags.includes(tag)));
+  $('storyCards').replaceChildren(...matches.map(createCard));
+  $('shelfCount').textContent = matches.length + (matches.length === 1 ? ' story' : ' stories') +
+    (matches.length === shelfEntries.length ? ' to explore' : ' of ' + shelfEntries.length + ' stories');
+  $('shelfEmpty').classList.toggle('hidden', matches.length > 0);
+  $('clearFilters').hidden = !age && !category && !tag;
+  try { localStorage.setItem('wpw-shelf-filters', JSON.stringify({age, category, tag})); } catch {}
+}
+
+function resetFilters() {
+  for (const id of ['filterAge', 'filterType', 'filterTheme']) $(id).value = '';
+  filterShelf();
+}
+
+function fillFilter(id, values) {
+  for (const value of [...new Set(values)].sort((a, b) => a.localeCompare(b))) {
+    const option = document.createElement('option');
+    option.value = value;
+    option.textContent = value.charAt(0).toUpperCase() + value.slice(1);
+    $(id).append(option);
+  }
+}
 
 async function getJSON(url) {
   const response = await fetch(url);
@@ -156,6 +188,14 @@ function createCard(entry) {
   cover.classList.add({loch:'loch-cover', moonseed:'garden-cover'}[entry.id] || 'letter-cover');
   cover.textContent = entry.icon;
   card.querySelector('.pill').textContent = entry.type.replace(/ adventure$/, '') + ' · Ages ' + entry.age;
+  const themes = document.createElement('div');
+  themes.className = 'story-tags';
+  for (const tag of entry.tags) {
+    const chip = document.createElement('span');
+    chip.textContent = tag.charAt(0).toUpperCase() + tag.slice(1);
+    themes.append(chip);
+  }
+  card.querySelector('p').after(themes);
   card.querySelector('h2').textContent = entry.title;
   card.querySelector('p').textContent = entry.description;
   const button = card.querySelector('button');
@@ -166,8 +206,27 @@ function createCard(entry) {
 
 async function loadShelf() {
   try {
-    const entries = await getJSON('./catalog.json');
-    $('storyCards').replaceChildren(...entries.map(createCard));
+    shelfEntries = (await getJSON('./catalog.json')).map(entry => ({
+      ...entry,
+      ageRange: entry.ageRange || entry.age.match(/\d+/g).map(Number),
+      category: entry.category || entry.type.replace(/ adventure$/i, ''),
+      tags: entry.tags || []
+    }));
+    fillFilter('filterType', shelfEntries.map(entry => entry.category));
+    fillFilter('filterTheme', shelfEntries.flatMap(entry => entry.tags));
+    try {
+      const saved = JSON.parse(localStorage.getItem('wpw-shelf-filters'));
+      for (const [id, key] of [['filterAge', 'age'], ['filterType', 'category'], ['filterTheme', 'tag']]) {
+        if (saved && [...$(id).options].some(option => option.value === saved[key])) $(id).value = saved[key];
+      }
+    } catch {}
+    for (const id of ['filterAge', 'filterType', 'filterTheme']) {
+      $(id).disabled = false;
+      $(id).onchange = filterShelf;
+    }
+    $('clearFilters').onclick = resetFilters;
+    $('emptyReset').onclick = resetFilters;
+    filterShelf();
     $('catalogStatus').textContent = '';
   } catch {
     $('catalogStatus').textContent = 'The bookshelf could not be loaded. Connect to the internet and reload.';
