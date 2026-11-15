@@ -91,8 +91,13 @@ if (!storyFiles.length) throw new Error('No stories found in public/stories.');
 for (const name of storyFiles) {
   const story = JSON.parse(await readFile(join(source, 'stories', name), 'utf8'));
   const routes = checkStory(story, name);
+  const ageRange = story.ageRange || story.age.match(/\d+/g)?.map(Number);
+  if (!Array.isArray(ageRange) || ageRange.length !== 2 || !ageRange.every(Number.isInteger) || ageRange[0] < 0 || ageRange[0] > ageRange[1]) throw new Error(name + ' · ageRange must contain minimum and maximum ages.');
+  const category = story.category || story.type.replace(/ adventure$/i, '').trim();
+  const tags = story.tags || [];
+  if (!isText(category) || !Array.isArray(tags) || !tags.every(isText)) throw new Error(name + ' · category and tags must be text.');
   const {nodes, saveKey, ...entry} = story;
-  catalog.push({...entry, file: './stories/' + name});
+  catalog.push({...entry, ageRange, category, tags: [...new Set(tags.map(tag => tag.trim().toLowerCase()))], file: './stories/' + name});
   console.log(story.title + ' · ' + routes + ' complete routes');
 }
 
@@ -102,7 +107,7 @@ catalog.sort((a, b) => order(a.id) - order(b.id));
 const catalogJSON = JSON.stringify(catalog, null, 2) + '\n';
 const resources = ['index.html', 'reader.js', 'manifest.webmanifest', 'icons/apple-touch-icon.png',
   'icons/icon-192.png', 'icons/icon-512.png', ...storyFiles.map(name => 'stories/' + name)];
-const worker = await readFile(join(root, 'Scripts/sw-template.js'), 'utf8');
+const worker = await readFile(new URL('./sw-template.js', import.meta.url), 'utf8');
 const hash = createHash('sha256').update(worker).update(catalogJSON);
 for (const path of resources) hash.update(path).update(await readFile(join(source, path)));
 const release = hash.digest('hex').slice(0, 16);
