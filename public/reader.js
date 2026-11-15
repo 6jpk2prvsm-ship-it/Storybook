@@ -5,6 +5,75 @@ const trail = [];
 let book;
 let sceneId = 'start';
 let shelfEntries = [];
+let personalisation = null;
+let returnToReader = false;
+const profileKey = 'wpw-personalisation-v1';
+const pronouns = {
+  he: {subject: 'he', possessive: 'his'},
+  she: {subject: 'she', possessive: 'her'},
+  default: {subject: 'they', possessive: 'their'}
+};
+
+function validProfile(value) {
+  return value && typeof value.name === 'string' && value.name.trim().length > 0 &&
+    value.name.length <= 40 && /^[\p{L}\p{M} .'’\-]+$/u.test(value.name) &&
+    ['he', 'she'].includes(value.pronouns);
+}
+
+function storyText(text, profile = personalisation) {
+  const values = {name: profile?.name || 'Pip', ...pronouns[profile?.pronouns || 'default']};
+  return text.replace(/\{\{(name|subject|possessive)\}\}/g, (_, key) => values[key]);
+}
+
+function readProfile() {
+  try {
+    const value = JSON.parse(localStorage.getItem(profileKey));
+    return validProfile(value) ? value : null;
+  } catch { return null; }
+}
+
+function profilePreview() {
+  const name = $('childName').value.trim() || 'Your little dinosaur';
+  const selected = $('childPronouns').value;
+  $('personalisePreview').textContent = name + ' put down the picnic basket. “Right,” ' +
+    (pronouns[selected]?.subject || 'they') + ' said. “Blanket. Berries. Enormous melon.”';
+  $('personaliseError').textContent = '';
+}
+
+function showPersonalisation(editing = false) {
+  returnToReader = editing;
+  const profile = editing ? personalisation : readProfile();
+  $('childName').value = profile?.name || '';
+  $('childPronouns').value = profile?.pronouns || '';
+  $('personaliseCancel').textContent = editing ? 'Back to story' : 'Back to bookshelf';
+  for (const id of ['library', 'reader', 'restartTop', 'personaliseButton']) $(id).classList.add('hidden');
+  $('homeButton').classList.remove('hidden');
+  $('personalisePanel').classList.remove('hidden');
+  profilePreview();
+  $('personaliseTitle').focus({preventScroll: true});
+  scrollToTop();
+}
+
+function enterStory() {
+  $('personalisePanel').classList.add('hidden');
+  $('library').classList.add('hidden');
+  for (const id of ['reader', 'restartTop', 'homeButton']) $(id).classList.remove('hidden');
+  $('personaliseButton').classList.toggle('hidden', !book.personalisation);
+  $('bookSubtitle').textContent = storyText(book.subtitle);
+  render();
+}
+
+function startPersonalised(event) {
+  event.preventDefault();
+  const profile = {name: $('childName').value.trim().replace(/\s+/g, ' '), pronouns: $('childPronouns').value};
+  if (!validProfile(profile)) {
+    $('personaliseError').textContent = 'Enter a name (up to 40 letters, spaces, apostrophes or hyphens) and choose story pronouns.';
+    return;
+  }
+  personalisation = profile;
+  try { localStorage.setItem(profileKey, JSON.stringify(profile)); } catch {}
+  enterStory();
+}
 
 function filterShelf() {
   const age = $('filterAge').value;
@@ -71,8 +140,9 @@ function restore() {
 }
 
 function renderParagraph(paragraph) {
-  const text = typeof paragraph === 'string' ? paragraph :
+  const sourceText = typeof paragraph === 'string' ? paragraph :
     paragraph.variants.find(variant => variant.visited.every(id => trail.includes(id))).text;
+  const text = storyText(sourceText);
   const p = document.createElement('p');
   // The existing stories use this one style of emphasis for sounds.
   text.split(/(<strong class="sound">[\s\S]*?<\/strong>)/).forEach((part, i) => {
@@ -94,7 +164,7 @@ function scrollToTop() {
 
 function render() {
   const scene = book.nodes[sceneId];
-  $('sceneTitle').textContent = scene.title;
+  $('sceneTitle').textContent = storyText(scene.title);
   $('sceneNumber').textContent = scene.number;
   $('storyText').replaceChildren(...scene.text.map(renderParagraph));
   $('progressBar').style.width = scene.progress + '%';
@@ -112,7 +182,7 @@ function render() {
     letter.textContent = String.fromCharCode(65 + i);
     const caption = document.createElement('span');
     caption.className = 'label';
-    caption.textContent = label;
+    caption.textContent = storyText(label);
     const arrow = document.createElement('span');
     arrow.className = 'arrow';
     arrow.setAttribute('aria-hidden', 'true');
@@ -125,7 +195,7 @@ function render() {
     };
     $('choices').append(button);
   }
-  $('choicePrompt').textContent = scene.prompt || '';
+  $('choicePrompt').textContent = storyText(scene.prompt || '');
   $('choiceArea').classList.toggle('hidden', !!scene.ending);
   $('endingArea').classList.toggle('hidden', !scene.ending);
   $('backrow').classList.toggle('hidden', !!scene.ending);
@@ -155,15 +225,14 @@ async function openStory(entry) {
   $('catalogStatus').textContent = 'Opening ' + entry.title + '…';
   try {
     book = await getJSON(entry.file);
+    personalisation = null;
     trail.length = 0;
     sceneId = 'start';
     restore();
     $('ageLabel').textContent = 'A choose-your-own adventure · Ages ' + book.age;
     $('bookTitle').textContent = book.title;
-    $('bookSubtitle').textContent = book.subtitle;
-    $('library').classList.add('hidden');
-    for (const id of ['reader', 'restartTop', 'homeButton']) $(id).classList.remove('hidden');
-    render();
+    if (book.personalisation) showPersonalisation();
+    else enterStory();
     $('catalogStatus').textContent = '';
   } catch {
     $('catalogStatus').textContent = 'That story could not be opened. Check your connection and try again.';
@@ -173,7 +242,7 @@ async function openStory(entry) {
 }
 
 function showLibrary() {
-  for (const id of ['reader', 'restartTop', 'homeButton']) $(id).classList.add('hidden');
+  for (const id of ['reader', 'restartTop', 'homeButton', 'personalisePanel', 'personaliseButton']) $(id).classList.add('hidden');
   $('library').classList.remove('hidden');
   document.title = 'Choose a story · Where Pages Wander';
   $('libraryTitle').focus({preventScroll: true});
@@ -197,7 +266,7 @@ function createCard(entry) {
   }
   card.querySelector('p').after(themes);
   card.querySelector('h2').textContent = entry.title;
-  card.querySelector('p').textContent = entry.description;
+  card.querySelector('p').textContent = storyText(entry.description, null);
   const button = card.querySelector('button');
   button.textContent = entry.button;
   button.onclick = () => openStory(entry);
@@ -261,6 +330,18 @@ $('restartButton').onclick = restart;
 $('backButton').onclick = back;
 $('endingBack').onclick = back;
 $('homeButton').onclick = showLibrary;
+$('personaliseForm').onsubmit = startPersonalised;
+$('childName').oninput = profilePreview;
+$('childPronouns').onchange = profilePreview;
+$('personaliseButton').onclick = () => showPersonalisation(true);
+$('personaliseCancel').onclick = () => returnToReader ? enterStory() : showLibrary();
+$('readDefault').onclick = () => { personalisation = null; enterStory(); };
+$('clearProfile').onclick = () => {
+  try { localStorage.removeItem(profileKey); } catch {}
+  $('childName').value = '';
+  $('childPronouns').value = '';
+  profilePreview();
+};
 showLibrary();
 loadShelf();
 prepareOffline();
