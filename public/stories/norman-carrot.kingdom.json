@@ -1,0 +1,933 @@
+{
+
+  "id": "norman-carrot-kingdom",
+
+  "title": "Norman and the Carrot Kingdom",
+
+  "age": "6–8",
+
+  "type": "Quest",
+
+  "subtitle": "A small pony. An enormous appetite.",
+
+  "description": "Norman the Shetland pony sets off to find the world's biggest carrots. Choose his path, help new friends and discover whether the Carrot Kingdom is really as crunchy as it sounds.",
+
+  "icon": "🥕",
+
+  "button": "Join Norman's quest",
+
+  "saveKey": "where-pages-wander-norman-carrot-kingdom-v1",
+
+  "nodes": {
+
+    "start": {
+
+      "title": "A Very Promising Leaf",
+
+      "number": "1",
+
+      "progress": 0,
+
+      "text": [
+
+        "Something green sailed over the paddock fence and landed on Norman’s head.",
+
+        "He stopped chewing.",
+
+        "He shook one ear.",
+
+        "The green thing slid down his nose.",
+
+        "It was a carrot top.",
+
+        "An enormous carrot top.",
+
+        "Norman sniffed it. Then he nibbled one feathery leaf, just to check.",
+
+        "Definitely carrot.",
+
+        "“Well,” he said.",
+
+        "A swallow swooped onto the fence.",
+
+        "“That came a long way!”",
+
+        "“From a long carrot?” asked Norman.",
+
+        "“From the Carrot Kingdom. Beyond the hills. They’re gathering the harvest.”",
+
+        "Norman had heard the stories. Carrots as thick as fenceposts. Carrots as long as benches. Carrots so big that—",
+
+        "“Are they bigger than me?”",
+
+        "“Much.”",
+
+        "Norman looked down at himself.",
+
+        "Then he looked at the leaf.",
+
+        "“I should like to meet one.”",
+
+        "“You can follow the brook through the trees,” said the swallow. “Or take the windy path over the hill. Both lead to the valley.”",
+
+        "Norman tucked the carrot top beneath his headcollar.",
+
+        "He trotted towards the paddock gate, which was standing open.",
+
+        "“I am going on a quest,” he announced.",
+
+        "“Will you be gone long?”",
+
+        "“That,” said Norman, “depends how much chewing there is.”"
+
+      ],
+
+      "prompt": "Which way should Norman go?",
+
+      "choices": [
+
+        ["Follow the bubbling brook", "brook"],
+
+        ["Take the windy hill path", "hill"]
+
+      ]
+
+    },
+
+    "brook": {
+
+      "title": "The Cart That Wouldn’t",
+
+      "number": "2",
+
+      "progress": 25,
+
+      "text": [
+
+        "The brook chuckled over smooth stones.",
+
+        "Norman followed it beneath the willows, ducking under branches that would have tickled a taller pony’s ears.",
+
+        "Around a bend, he found a little wooden cart blocking the path.",
+
+        "Radishes poked from the top.",
+
+        "An otter stood in front of it, pulling a harness.",
+
+        "“Hup!”",
+
+        "The cart didn’t move.",
+
+        "“HUP!”",
+
+        "One radish fell out.",
+
+        "Otter sat down.",
+
+        "“That’s the third radish I’ve lost. At this rate, I’ll arrive with a cart full of fresh air.”",
+
+        "“Where are you going?” asked Norman.",
+
+        "“The Carrot Kingdom. I’m delivering lunch for the gardeners.”",
+
+        "“So am I,” said Norman. “Except for the delivering lunch part.”",
+
+        "Otter stood and brushed his paws.",
+
+        "“The wheel’s caught between those stones. I thought I could pull it through.”",
+
+        "Norman leaned closer. The cart was small enough for him to help pull, but there was also room to lower his head and inspect the wheel.",
+
+        "Behind the cart, the path was too narrow to squeeze past.",
+
+        "Norman’s stomach rumbled.",
+
+        "“We had better sort this out,” he said."
+
+      ],
+
+      "prompt": "How should Norman help?",
+
+      "choices": [
+
+        ["Help Otter pull the cart free", "steady-pull"],
+
+        ["Look for what is trapping the wheel", "stuck-wheel"]
+
+      ]
+
+    },
+
+    "steady-pull": {
+
+      "title": "One, Two, Heave!",
+
+      "number": "3",
+
+      "progress": 50,
+
+      "text": [
+
+        "Otter fastened a spare strap to the cart.",
+
+        "Norman leaned into it.",
+
+        "Otter pulled.",
+
+        "Norman stopped.",
+
+        "Then Norman pulled.",
+
+        "Otter stopped.",
+
+        "The cart gave a tiny creak.",
+
+        "“We’re taking turns,” said Norman.",
+
+        "“Yes,” puffed Otter. “Very politely.”",
+
+        "“Perhaps we should be less polite.”",
+
+        "They stood side by side.",
+
+        "“One,” said Norman.",
+
+        "“Two,” said Otter.",
+
+        "“HEAVE!”",
+
+        "They pulled together, slowly and steadily.",
+
+        "The wheel climbed the edge of a stone.",
+
+        "“One, two—HEAVE!”",
+
+        "With a bump and a rattle, the cart rolled free.",
+
+        "Otter landed on his bottom.",
+
+        "Norman sat down too, although he hadn’t meant to.",
+
+        "For a moment, they looked at each other.",
+
+        "Then they laughed so hard that another radish fell out.",
+
+        "Otter popped it back into the cart.",
+
+        "“Together,” he said. “That was the trick.”",
+
+        "Norman nodded. He rather liked being part of a team.",
+
+        "At the next bend, Otter took the smooth delivery path beside the water.",
+
+        "“Your path goes up through those hazels. You’ll see the valley from the top.”",
+
+        "Norman trotted on, quietly practising.",
+
+        "“One, two, heave.”",
+
+        "A squirrel watched him pass.",
+
+        "“Carrot business,” Norman explained."
+
+      ],
+
+      "prompt": "Continue the adventure.",
+
+      "choices": [
+
+        ["On towards the kingdom", "kingdom"]
+
+      ]
+
+    },
+
+    "stuck-wheel": {
+
+      "title": "A Very Small Problem",
+
+      "number": "3",
+
+      "progress": 50,
+
+      "text": [
+
+        "Norman lowered his nose beside the wheel.",
+
+        "There was a large stone on one side.",
+
+        "Another large stone on the other.",
+
+        "And underneath—",
+
+        "“Ah.”",
+
+        "“What?” asked Otter.",
+
+        "“A little one.”",
+
+        "A pebble had wedged beneath the wheel like a doorstop.",
+
+        "Otter bent down.",
+
+        "“That tiny thing?”",
+
+        "“It is doing a very good job.”",
+
+        "Otter fetched a stout stick from beside the brook. He eased it under the edge of the wheel while Norman watched the pebble.",
+
+        "“A little higher. There!”",
+
+        "Norman nudged the pebble aside with his hoof.",
+
+        "Otter lowered the wheel.",
+
+        "Then he gave the harness a careful tug.",
+
+        "The cart rolled forwards.",
+
+        "“Oh!” said Otter, hurrying after it. “Oh, that’s much better!”",
+
+        "Norman followed, looking pleased.",
+
+        "“I nearly pulled my whiskers off,” said Otter, “and all I needed was to look underneath.”",
+
+        "Norman inspected the pebble.",
+
+        "It didn’t look sorry.",
+
+        "At the next bend, Otter took the smooth delivery path beside the water.",
+
+        "“Go up through those hazels,” he called. “The valley is just beyond.”",
+
+        "Norman headed uphill.",
+
+        "He kept an eye out for small things causing large problems.",
+
+        "Especially if they were sitting beneath his feet."
+
+      ],
+
+      "prompt": "Continue the adventure.",
+
+      "choices": [
+
+        ["On towards the kingdom", "kingdom"]
+
+      ]
+
+    },
+
+    "hill": {
+
+      "title": "A Pumpkin in the Way",
+
+      "number": "2",
+
+      "progress": 25,
+
+      "text": [
+
+        "The hill wind blew Norman’s mane over one eye.",
+
+        "He shook it back.",
+
+        "The wind put it over the other.",
+
+        "“Very funny,” he told it.",
+
+        "Near the top stood a garden gate.",
+
+        "In the gateway sat a pumpkin.",
+
+        "Behind the pumpkin stood a sheep.",
+
+        "“Oh, good,” said Sheep. “Someone with feet.”",
+
+        "Norman looked down.",
+
+        "“Four.”",
+
+        "“Excellent. I’ve been trying to get this pumpkin to the Carrot Kingdom’s harvest picnic.”",
+
+        "She pushed it with her shoulder.",
+
+        "The pumpkin wobbled.",
+
+        "She pushed harder.",
+
+        "The pumpkin stopped wobbling.",
+
+        "“I grew it on this side of the gate,” she explained. “That was my first mistake.”",
+
+        "Norman examined the gap.",
+
+        "The pumpkin had squeezed halfway through, but its lower half was pressed against a hump of earth. One side touched the gatepost.",
+
+        "“I could fit beside that post,” he said.",
+
+        "“You’re quite little.”",
+
+        "“I am a sensible size.”",
+
+        "“Of course.”",
+
+        "There was room for Norman to nudge the pumpkin while Sheep pushed. Or he could scrape away some of the loose earth underneath it.",
+
+        "Beyond the gate, the path continued towards the valley."
+
+      ],
+
+      "prompt": "What should Norman try?",
+
+      "choices": [
+
+        ["Help Sheep roll the pumpkin", "rolling-pumpkin"],
+
+        ["Clear a path around the pumpkin", "clear-path"]
+
+      ]
+
+    },
+
+    "rolling-pumpkin": {
+
+      "title": "The Pumpkin Wobble",
+
+      "number": "3",
+
+      "progress": 50,
+
+      "text": [
+
+        "Norman squeezed beside the low gatepost.",
+
+        "His nose fitted.",
+
+        "His shoulders fitted.",
+
+        "His bottom fitted, although it required a little wriggling.",
+
+        "“Ready?” asked Sheep.",
+
+        "Norman pressed his shoulder against the pumpkin.",
+
+        "They pushed.",
+
+        "Nothing.",
+
+        "They pushed harder.",
+
+        "Still nothing.",
+
+        "Norman stepped back for a breath. As he moved, the pumpkin rocked towards him.",
+
+        "“Wait,” he said. “Push when I push.”",
+
+        "He nudged it away.",
+
+        "Sheep pushed.",
+
+        "Then they let it rock gently back.",
+
+        "Away.",
+
+        "Back.",
+
+        "Away—",
+
+        "The pumpkin rolled over the hump.",
+
+        "“STOP!” bleated Sheep.",
+
+        "Norman scrambled out of the gateway.",
+
+        "The pumpkin rolled onto the level path and settled against a tuft of grass.",
+
+        "Sheep hurried over.",
+
+        "“Well! A little wobble was what it needed.”",
+
+        "Norman flicked his mane.",
+
+        "“I have an excellent wobble.”",
+
+        "Sheep fetched a low trolley from beside the fence. Together they rolled the pumpkin aboard.",
+
+        "“I’ll take the long path round,” she said. “You go straight over the ridge. And save me somewhere to put this!”",
+
+        "Norman continued uphill.",
+
+        "Behind him came the squeak of trolley wheels.",
+
+        "And, once, a worried bleat.",
+
+        "“Stay there, pumpkin.”"
+
+      ],
+
+      "prompt": "Continue the adventure.",
+
+      "choices": [
+
+        ["On towards the kingdom", "kingdom"]
+
+      ]
+
+    },
+
+    "clear-path": {
+
+      "title": "Room for a Pumpkin",
+
+      "number": "3",
+
+      "progress": 50,
+
+      "text": [
+
+        "Norman lowered his head.",
+
+        "The earth beneath the pumpkin was dry and crumbly.",
+
+        "“I think it needs a little more room.”",
+
+        "Sheep fetched a short wooden rake from the garden.",
+
+        "She loosened the hump of soil while Norman scraped the crumbs away with his narrow front hoof.",
+
+        "Scritch.",
+
+        "Scritch.",
+
+        "A beetle hurried out.",
+
+        "“Sorry,” said Norman.",
+
+        "They worked along the pumpkin’s lower edge.",
+
+        "Soon, a shallow groove ran through the gateway.",
+
+        "Sheep set down the rake.",
+
+        "“Shall we?”",
+
+        "Norman stood clear.",
+
+        "Sheep pushed.",
+
+        "The pumpkin slid forwards.",
+
+        "She pushed again.",
+
+        "It rolled through the gate and settled on the path.",
+
+        "For a moment, Sheep stared at the empty space where it had been.",
+
+        "“I was trying to squeeze the pumpkin smaller.”",
+
+        "Norman studied it.",
+
+        "“That might have taken a while.”",
+
+        "Sheep laughed and fetched a low trolley from beside the fence. Together they rolled the pumpkin aboard.",
+
+        "“I’ll take the long path round. Yours goes straight over the ridge.”",
+
+        "Norman brushed some soil from his hoof.",
+
+        "He hadn’t needed to be stronger than a pumpkin.",
+
+        "He had just needed somewhere to put it.",
+
+        "“See you at the picnic!” called Sheep.",
+
+        "That sounded extremely promising."
+
+      ],
+
+      "prompt": "Continue the adventure.",
+
+      "choices": [
+
+        ["On towards the kingdom", "kingdom"]
+
+      ]
+
+    },
+
+    "kingdom": {
+
+      "title": "Bigger Than Norman",
+
+      "number": "4",
+
+      "progress": 75,
+
+      "text": [
+
+        "At the top of the ridge, Norman stopped.",
+
+        "Below him lay a sheltered green valley.",
+
+        "There were little doors in the banks, washing on tiny lines and rows upon rows of feathery leaves.",
+
+        "Carrot leaves.",
+
+        "Some were taller than Norman’s ears.",
+
+        "He hurried down the path.",
+
+        "At the bottom, six rabbits stood around a carrot with a rope tied beneath its leafy crown.",
+
+        "They pulled.",
+
+        "They puffed.",
+
+        "The carrot did absolutely nothing.",
+
+        "Nearby, other carrots lay ready for the harvest picnic. One was longer than a wheelbarrow. Another was as thick as Norman’s middle.",
+
+        "He walked around it.",
+
+        "Then he walked around it again.",
+
+        "“Goodness,” he whispered.",
+
+        "A rabbit in a floppy gardening hat waved.",
+
+        "“Welcome to the Carrot Kingdom!”",
+
+        "Norman tried to reply.",
+
+        "He was too busy looking.",
+
+        {
+
+          "variants": [
+
+            {
+
+              "visited": ["steady-pull"],
+
+              "text": "“I helped Otter free his cart,” Norman said at last. “We had to pull together.” The gardener looked at the rabbits, who were all tugging at different moments. “That sounds useful.”"
+
+            },
+
+            {
+
+              "visited": ["stuck-wheel"],
+
+              "text": "“I helped Otter free his cart,” Norman said at last. “A tiny pebble was trapping the wheel.” The gardener glanced down at the soil. “Perhaps we should look more closely here, too.”"
+
+            },
+
+            {
+
+              "visited": ["rolling-pumpkin"],
+
+              "text": "“I helped Sheep move her pumpkin,” Norman said at last. “A gentle rocking movement loosened it.” The gardener gave the carrot an interested look. “We’ve mostly been yanking.”"
+
+            },
+
+            {
+
+              "visited": ["clear-path"],
+
+              "text": "“I helped Sheep move her pumpkin,” Norman said at last. “We cleared some earth to give it room.” The gardener nodded. “This carrot does seem rather tightly packed in.”"
+
+            },
+
+            {
+
+              "visited": [],
+
+              "text": "Norman finally looked up from the enormous carrots. “That is a very big harvest,” he said."
+
+            }
+
+          ]
+
+        },
+
+        "“This is our biggest carrot,” said the gardener. “We’d love to share it at the picnic. Would you help?”",
+
+        "Norman stood a little taller.",
+
+        "The rabbits had a broad pulling harness that would fit him. Beside the vegetable beds waited a row of small spades.",
+
+        "His stomach gave an enormous rumble.",
+
+        "Everyone looked at him.",
+
+        "“Yes,” said Norman firmly. “I would.”"
+
+      ],
+
+      "prompt": "How should Norman help harvest the carrot?",
+
+      "choices": [
+
+        ["Get everyone pulling together", "ending-pull"],
+
+        ["Make room around the carrot", "ending-dig"]
+
+      ]
+
+    },
+
+    "ending-pull": {
+
+      "title": "The Great Carrot PLOP",
+
+      "number": "5",
+
+      "progress": 100,
+
+      "ending": true,
+
+      "text": [
+
+        {
+
+          "variants": [
+
+            {
+
+              "visited": ["steady-pull"],
+
+              "text": "Norman remembered Otter’s cart. “We need to pull at the same time,” he said. “I know a good count.”"
+
+            },
+
+            {
+
+              "visited": ["stuck-wheel"],
+
+              "text": "Norman checked around the carrot’s base. There was no loose pebble to nudge away this time. “Let’s try together,” said the gardener. “Slow and steady.”"
+
+            },
+
+            {
+
+              "visited": ["rolling-pumpkin"],
+
+              "text": "“First, a little wobble,” said Norman. The rabbits helped him rock the carrot gently until the earth around it cracked."
+
+            },
+
+            {
+
+              "visited": ["clear-path"],
+
+              "text": "Norman scraped a little loose soil from around the carrot’s crown. “That gives us some room.” The gardener nodded. “Now let’s pull together.”"
+
+            },
+
+            {
+
+              "visited": [],
+
+              "text": "“Let’s all pull together,” said Norman. “Slow and steady.”"
+
+            }
+
+          ]
+
+        },
+
+        "The gardener fitted Norman’s harness and fastened it to the rope.",
+
+        "The rabbits lined up behind him.",
+
+        "“One,” called Norman.",
+
+        "Everyone leaned forwards.",
+
+        "“Two.”",
+
+        "Six pairs of rabbit ears tipped back.",
+
+        "“HEAVE!”",
+
+        "The rope tightened.",
+
+        "The leaves trembled.",
+
+        "Something deep beneath the ground made a sucking noise.",
+
+        "“Again!” called Norman.",
+
+        "“One, two—”",
+
+        "PLOP!",
+
+        "The carrot came free.",
+
+        "Norman sat down.",
+
+        "The rabbits tumbled into a soft, surprised heap.",
+
+        "And the carrot lay across the grass like an orange canoe.",
+
+        "For three whole seconds, nobody spoke.",
+
+        "Then Norman said, “I think that is bigger than me.”",
+
+        "The picnic blankets came out. So did bread, radishes, apple juice and enough carrot slices to make a crunchy orange mountain.",
+
+        "Norman’s slice hung over both sides of his plate.",
+
+        "“I knew it would fit,” he said.",
+
+        "The gardener looked at the plate.",
+
+        "Norman moved it onto the blanket.",
+
+        "“There.”",
+
+        "When the evening shadows stretched across the valley, the rabbits packed him a parcel for home.",
+
+        "Norman tucked the enormous carrot top beneath his headcollar again.",
+
+        "This time, he knew exactly how big the carrot had been.",
+
+        "He had eaten some of it.",
+
+        "And there was still plenty left."
+
+      ]
+
+    },
+
+    "ending-dig": {
+
+      "title": "The Root of the Trouble",
+
+      "number": "5",
+
+      "progress": 100,
+
+      "ending": true,
+
+      "text": [
+
+        {
+
+          "variants": [
+
+            {
+
+              "visited": ["steady-pull"],
+
+              "text": "“Pulling together helped Otter,” said Norman. “But you’ve already done a lot of pulling. Let’s see what’s underneath.”"
+
+            },
+
+            {
+
+              "visited": ["stuck-wheel"],
+
+              "text": "Norman remembered the pebble beneath Otter’s wheel. “Before we try harder,” he said, “let’s find out what’s holding it.”"
+
+            },
+
+            {
+
+              "visited": ["rolling-pumpkin"],
+
+              "text": "Norman gave the carrot a careful nudge. It barely wobbled. “That worked on the pumpkin,” he said. “This one needs a different idea.”"
+
+            },
+
+            {
+
+              "visited": ["clear-path"],
+
+              "text": "Norman remembered the groove beneath Sheep’s pumpkin. “Let’s make a little room,” he said."
+
+            },
+
+            {
+
+              "visited": [],
+
+              "text": "“Let’s see what’s holding the carrot,” said Norman."
+
+            }
+
+          ]
+
+        },
+
+        "The rabbits fetched their spades.",
+
+        "They loosened the packed soil while Norman scraped it gently away from the edge.",
+
+        "Soon, a thick orange root appeared.",
+
+        "Then another.",
+
+        "Then—",
+
+        "“Stop,” said Norman.",
+
+        "One root curved beneath a flat stone.",
+
+        "“There’s your trouble.”",
+
+        "Two rabbits lifted the stone while the gardener carefully eased the root free.",
+
+        "Norman peered into the hole.",
+
+        "“Now?”",
+
+        "“Now,” said the gardener.",
+
+        "They moved clear of the hole and took hold of the rope. With Norman in the harness and the rabbits pulling alongside, the carrot rose slowly from the earth.",
+
+        "Up came its shoulders.",
+
+        "Up came its middle.",
+
+        "Up came a long, curly tip.",
+
+        "The rabbits lowered it onto the grass.",
+
+        "Norman walked from one end to the other.",
+
+        "“That,” he said, “was worth the journey.”",
+
+        "Soon, picnic blankets covered the lawn. There were radishes, warm bread and enough carrot slices for everyone.",
+
+        "The gardener handed Norman an especially generous piece.",
+
+        "He examined it closely.",
+
+        "“Checking for stones?” she asked.",
+
+        "“One was quite enough.”",
+
+        "She laughed.",
+
+        "Norman took a bite.",
+
+        "CRUNCH.",
+
+        "Sweet, crisp and absolutely enormous.",
+
+        "Before he left, the rabbits packed a parcel for his friends at home.",
+
+        "Norman looked back from the valley path.",
+
+        "The empty carrot hole was almost big enough for a pony.",
+
+        "A sensible-sized pony, anyway."
+
+      ]
+
+    }
+
+  }
+
+}
